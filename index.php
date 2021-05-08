@@ -61,6 +61,38 @@
                     <div class="w100">
                         <input type="password" placeholder="Senha">
                     </div><!--w100-->
+
+                    <div class="w100">
+                        <h2>Data de Nascimento:</h2>
+                        <select name="nascimentoDia" class="nascimento">
+                            <?php
+                                for ($i = 1; $i<=31; $i++){
+                            ?>
+                            <option value="<?= $i ?>"><?= $i ?></option>
+                            <?php } ?>
+                        </select>
+                        <select name="nascimentoMes"  class="nascimento">
+                            <option value="junho">Junho</option>
+                        </select>
+                        <select name="nascimentoAno"  class="nascimento">
+                            <?php for($i = 1900; $i<=date("Y"); $i++){ ?>
+                                <option value="<?= $i ?>"><?= $i ?></option>
+                            <?php } ?>
+                        </select>
+                        <div class="clear"></div>
+                    </div><!-- w100 -->
+
+                    <div class="w100">
+                        <div class="input-radio">
+                            <input type="radio" name="sexo" value="Masculino">
+                            <h2>Masculino</h2>
+                        </div><!-- input radio -->
+                        <div class="input-radio">
+                            <input type="radio" name="sexo" value="Feminino">
+                            <h2>Feminino</h2>
+                        </div><!-- input radio -->
+                        <div class="clear"></div>
+                    </div><!-- w100 -->
                     
                     <div class="w100">
                         <input type="submit" name="acao" value="Cadastrar">
@@ -72,6 +104,18 @@
             <div class="clear"></div>
         </div><!-- center -->
     </section><!-- main -->
+
+    <section id="linguas">
+        <div class="center">
+            <a href="#" class="selected-lingua">Português (Brasil)</a>
+            <a href="#" >Português (Brasil)</a>
+            <a href="#" >Português (Brasil)</a>
+            <a href="#" >Português (Brasil)</a>
+            <a href="#" >Português (Brasil)</a>
+            <a href="#" >Português (Brasil)</a>
+            <a href="#" >Português (Brasil)</a>
+        </div><!-- center -->
+    </section><!-- linguas -->
 
 </body>
 </html>
