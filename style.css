@@ -138,6 +138,7 @@ form .w100 h2{
 
 form select.nascimento{
     float: left;
+    padding: 6px;
 }
 
 .input-radio{
@@ -172,4 +173,47 @@ section#linguas .center{
     padding-right: 8px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 768px){
+    .logo{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    form.form-login{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    .form-login .form-element{
+        display: block;
+        margin: 10px 0;
+    }
+
+    .form-element p{
+        color: white;
+        font-size: 14px;
+    }
+
+    .form-element input[type=email],
+    .form-element input[type=password]{
+        margin: 4px;
+        border: 0;
+        height: 22px;
+        padding-left: 3px;
+        width: 100%;
+        max-width: 320px;
+    }
+    .form-element input[type=submit]{
+        width: 140px;
+    }
+    .img-pessoas{
+        display: none;
+    }
+    .abrir-conta{
+        width: 100%;
+    }
 }
